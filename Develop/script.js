@@ -27,6 +27,11 @@ if (charCount < 8 || charCount > 128) {
   var lowercase = confirm("Would you like to use lowercase letters?")
   var number = confirm("Would you like to use numbers?")
   var symbol = confirm("Would you like to use special characters?")
+  // console.log(uppercase)
+  // console.log(lowercase)
+  // console.log(number)
+  // console.log(symbol)
+  if(!uppercase&&!lowercase&&!number&&!symbol) {alert ("You must choose one of the 4 options")}
 }
 
 if (uppercase) {options.uppercase = "uppercase";}
@@ -56,7 +61,7 @@ for (let i = 0; i < charCount; i++){
 }
   }
 
-console.log(finalpassword)
+// console.log(finalpassword)
 // return generatePassword()
 }
 function getrandomupper(){
